@@ -97,8 +97,13 @@ int main() {
 
     srand(time(0));
     //variáveis centrais que controlam o tamanho do vetor e busca do digito, respectivamente.
-    int t = 100;
-    int x = 3;
+    int t;
+    int x;
+
+    cout << "tamanho do vetor: ";
+    cin >> t;
+    cout << "número buscadoc: ";
+    cin >> x;
 
     //executam e passam os argumentos para as funções 
     thread t1(bus1, t, x);
